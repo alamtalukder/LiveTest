@@ -1,0 +1,78 @@
+<!-- Question   
+Create a JavaScript function that toggles dark mode when a button is clicked.Primarily, the h1 text is black and the background is white by default. No need
+to apply any CSS for the initial state. In dark mode, the text color of an
+<h1>
+  element changes to white and the background color of the
+<body>
+element changes to black. Add a CSS class inside the style tag of your template for the dark mode called “dark-mode” to change the text color of
+the
+<h1>
+element to white and the background color of the
+<body>
+element to black. Write a JavaScript function named “applyDarkMode” that
+toggles mode when called. Inside the function, toggle “dark-mode” CSS
+class in the body tag of your template. Ensure that the function is
+fired when the button is clicked. // Template: (Must use the below
+template. Do not modify any HTML or CSS)
+
+Template: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode Toggle</title>
+    <style>
+        /* Apply CSS Here For The Dark Mode */
+        —--------------- —---------------
+        /* Apply CSS Here For The Dark Mode */
+    </style>
+</head>
+<body id="body">
+    <h1>PHP</h1>
+    <button id="switchModeBtn">Switch Mode</button>
+    <script>
+        // Define the applyDarkMode function
+        ------------------------------------
+        // Add event listener to the Switch Mode button to trigger the applyDarkMode           function
+    </script>
+</body>
+
+</html>
+</body>
+</h1>
+</body>
+</h1>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Toggle</title>
+    <style>
+        /* Apply CSS Here For The Dark Mode */
+        /* No initial styles needed for light mode */
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body id="body">
+    <h1>PHP</h1>
+    <button id="switchModeBtn">Switch Mode</button>
+    <script>
+        // Define the applyDarkMode function
+        function applyDarkMode() {
+            const bodyElement = document.body;
+            bodyElement.classList.toggle("dark-mode");
+        }
+
+        // Add event listener to the Switch Mode button to trigger the applyDarkMode function
+        const switchModeButton = document.getElementById("switchModeBtn");
+        switchModeButton.addEventListener("click", applyDarkMode);
+    </script>
+</body>
+</html>
